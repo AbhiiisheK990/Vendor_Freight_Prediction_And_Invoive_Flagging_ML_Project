@@ -28,7 +28,7 @@ The goal is to help businesses improve **cost control, auditing, and vendor perf
 
 ---
 
-## 🏗 Project Structure
+## 📂 Project Structure
 
 
 Vendor_Freight_And_Invoice_Flagging_ML_Project
