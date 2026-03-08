@@ -108,23 +108,23 @@ A company receives thousands of vendor invoices every month.
 
 This system helps by:
 
-Predicting the expected freight cost
+ - Predicting the expected freight cost
 
-Comparing it with the actual invoice value
+ - Comparing it with the actual invoice value
 
-Automatically flagging suspicious invoices for manual review
+ - Automatically flagging suspicious invoices for manual review
 
-This improves financial control and fraud detection.
+ - This improves financial control and fraud detection.
 
 📈 Future Improvements
 
-Add automated anomaly detection
+ - Add automated anomaly detection
 
-Improve model performance with advanced algorithms
+ - Improve model performance with advanced algorithms
 
-Deploy as a cloud API
+ - Deploy as a cloud API
 
-Integrate with enterprise ERP systems
+ - Integrate with enterprise ERP systems
 
 📜 License
 
