@@ -93,10 +93,15 @@ Vendor_Freight_And_Invoice_Flagging_ML_Project
 ```
 git clone https://github.com/AbhiiisheK990/Vendor_Freight_And_Invoive_Flagging_ML_Project.git
 cd Vendor_Freight_And_Invoive_Flagging_ML_Project
+```
 2️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
 3️⃣ Run the Streamlit App
+```
 streamlit run app.py
+```
 📊 Example Use Case
 
 A company receives thousands of vendor invoices every month.
