@@ -102,7 +102,7 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
-** 📊 Example Use Case **
+**📊 Example Use Case**
 
 A company receives thousands of vendor invoices every month.
 
@@ -116,7 +116,7 @@ This system helps by:
 
  - This improves financial control and fraud detection.
 
-** 📈 Future Improvements **
+**📈 Future Improvements**
 
  - Add automated anomaly detection
 
@@ -126,7 +126,7 @@ This system helps by:
 
  - Integrate with enterprise ERP systems
 
-** 📜 License ** 
+**📜 License** 
 
 This project is licensed under the MIT License.
 
