@@ -161,3 +161,71 @@ Abhishek Hiremath
 Data Science & Analytics Enthusiast
 
 Focused on Machine Learning and Data Engineering projects
+## 🏗 End-to-End ML Architecture
+
+The following diagram illustrates the overall architecture of the machine learning system used for freight cost prediction and invoice anomaly detection.
+
+```mermaid
+flowchart TD
+
+A[Raw Vendor Invoice Data] --> B[Data Cleaning & Preprocessing]
+
+B --> C[Feature Engineering]
+
+C --> D[Train/Test Split]
+
+D --> E[Freight Cost Prediction Model\n(Regression)]
+
+D --> F[Invoice Flagging Model\n(Classification)]
+
+E --> G[Model Evaluation]
+F --> G
+
+G --> H[Model Serialization\nJoblib .pkl Files]
+
+H --> I[Prediction Pipeline]
+
+I --> J[Streamlit Web Application]
+
+J --> K[User Input: Vendor Shipment Details]
+
+K --> L[Freight Cost Prediction]
+
+L --> M[Invoice Flagging Decision]
+
+M --> N[Output: Predicted Freight Cost + Flag Status]
+```
+
+### Architecture Explanation
+
+**1. Data Source**
+Historical vendor shipment and invoice data is used as the training dataset.
+
+**2. Data Preprocessing**
+
+* Handle missing values
+* Remove duplicates
+* Encode categorical variables
+* Normalize / scale features
+
+**3. Feature Engineering**
+Relevant features are created to improve model accuracy.
+
+**4. Model Training**
+Two models are trained:
+
+* **Regression Model** → Predict expected freight cost
+* **Classification Model** → Detect suspicious invoices
+
+**5. Model Evaluation**
+Models are evaluated to ensure reliability before deployment.
+
+**6. Model Serialization**
+Trained models are saved as:
+
+* `predict_freight_model.pkl`
+* `predict_invoice_flag.pkl`
+* `scaler.pkl`
+
+**7. Deployment**
+The models are integrated into a **Streamlit application**, allowing users to enter shipment details and receive predictions in real time.
