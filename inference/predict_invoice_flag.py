@@ -1,3 +1,4 @@
+import os
 import joblib
 import pandas as pd
 from pathlib import Path
@@ -8,10 +9,11 @@ def load_model(model_path: str = MODEL_PATH):
     """
     Load trained classifier model
     """
-    with open(model_path,'rb') as f:
-        model = joblib.load(f)
-    return model
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    model_path = os.path.join(BASE_DIR, "models", "predict_invoice_flag.pkl")
 
+    return joblib.load(model_path)
 
 def predict_invoice_flag(input_data):
     """
